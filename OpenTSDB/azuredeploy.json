@@ -103,7 +103,7 @@
   "variables": {
     "defaultApiVersion": "2015-05-01-preview",
     "clusterApiVersion": "2015-03-01-preview",
-    "clusterStorageAccountName": "[concat(parameters('clusterName'),'store')]",
+    "clusterStorageAccountName": "[uniqueString(resourceGroup().id, parameters('clusterName'))]",
     "applicationName": "opentsdb",
     "galleryPackageIdentity": "opentsdb",
     "edgeNodeSuffix": "tdb",
