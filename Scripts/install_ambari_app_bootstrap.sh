@@ -27,4 +27,4 @@ for arg in "$@"; do
     fi
 done
 
-python /tmp/install_ambari_application.py $logarg $templatearg $@
+python /tmp/install_ambari_application.py $logarg $templatearg "$@"
